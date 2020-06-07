@@ -1,0 +1,21 @@
+.footer{
+  background-color: #ee8572;
+  margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.navbar-dark{
+  background-color: #63b7af;
+  font-size: 1.4rem;
+}
+
+
+.jumbotron{
+  padding:50px 10px 50px 10px;
+    margin:0px auto;
+  background-color: #abf0e9;
+}
+
+.body-bright{
+  background-color: #d4f3ef;
+}
