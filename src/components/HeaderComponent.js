@@ -16,9 +16,9 @@ import {
   Input,
   Label,
 } from "reactstrap";
-import Switch from 'react-switch';
+import Switch from "react-switch";
 import { NavLink } from "react-router-dom";
-
+import MusicPlayer from "../shared/musicPlayer";
 
 class Header extends Component {
   constructor(props) {
@@ -30,8 +30,8 @@ class Header extends Component {
     };
     this.toggleNav = this.toggleNav.bind(this);
     this.toggleModal = this.toggleModal.bind(this);
-    this.handleLogin=this.handleLogin.bind(this);
-    this.handleChecked=this.handleChecked.bind(this);
+    this.handleLogin = this.handleLogin.bind(this);
+    this.handleChecked = this.handleChecked.bind(this);
   }
 
   toggleNav() {
@@ -47,17 +47,23 @@ class Header extends Component {
   }
 
   //event needed? event.preventDefault() ?
-  handleLogin(event){
+  handleLogin(event) {
     this.toggleModal();
-    alert("The username is: "+this.username.value+" The password is: "+this.password.value+" Saved?:"+this.remember.checked);
+    alert(
+      "The username is: " +
+        this.username.value +
+        " The password is: " +
+        this.password.value +
+        " Saved?:" +
+        this.remember.checked
+    );
     event.preventDefault();
   }
 
   //nightshift mode
-  handleChecked(checked){
-    this.setState({checked});
+  handleChecked(checked) {
+    this.setState({ checked });
   }
-
 
   render() {
     return (
@@ -67,11 +73,14 @@ class Header extends Component {
             <NavbarToggler onClick={this.toggleNav} />
 
             <NavbarBrand className="mr-auto" href="/">
-              <span className="fa fa-trophy fa-4x" style={{color:"gold"}}></span>
+              <span
+                className="fa fa-trophy fa-4x"
+                style={{ color: "gold" }}
+              ></span>
             </NavbarBrand>
 
             <Collapse isOpen={this.state.isNavOpen} navbar>
-              <Nav navbar className="ml-auto" >
+              <Nav navbar className="ml-auto">
                 <NavItem>
                   <NavLink className="nav-link" to="/home">
                     <span className="fa fa-home fa-lg"></span>Home
@@ -114,7 +123,7 @@ class Header extends Component {
             </NavItem>
           </Nav>
         </Navbar>
-
+        
         <Jumbotron>
           <div className="container">
             <div className="row row-header">
@@ -122,10 +131,21 @@ class Header extends Component {
                 <h1>Welcome!</h1>
                 <p>Hi, welcome to Kevin's website</p>
               </div>
+              <div className="col-2 col-sm-2">
+                <MusicPlayer/>
+              </div>
               <div className="col-2 col-sm-4">
                 <label>
-                  <span style={{fontSize: "80%"}}>Night shift mode: {this.state.checked? "On":"Off"}</span>
-                  <Switch height={20} width={40} checked={this.state.checked} onChange={this.handleChecked}></Switch>
+                  <Switch
+                    className="align-middle"
+                    height={20}
+                    width={40}
+                    checked={this.state.checked}
+                    onChange={this.handleChecked}
+                  ></Switch>
+                  <span style={{ fontSize: "80%" }}>
+                    Night Mode: {this.state.checked ? "On" : "Off"}
+                  </span>
                 </label>
               </div>
             </div>
@@ -165,7 +185,8 @@ class Header extends Component {
                     type="checkbox"
                     name="remember"
                     innerRef={(input) => (this.remember = input)}
-                  ></Input>Remember this account?
+                  ></Input>
+                  Remember this account?
                 </Label>
               </FormGroup>
               <Button type="submit" value="submit" color="primary">
