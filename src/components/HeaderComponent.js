@@ -18,7 +18,7 @@ import {
 } from "reactstrap";
 import Switch from "react-switch";
 import { NavLink } from "react-router-dom";
-import MusicPlayer from "../shared/musicPlayer";
+import MusicPlayer from "../shared/MusicPlayer";
 
 class Header extends Component {
   constructor(props) {

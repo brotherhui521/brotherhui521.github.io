@@ -1,17 +1,16 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Tiles extends Component {
   render() {
     // Create tile for each item in data array
     // Pass data to each tile and assign a key
     return (
-     
-        <div className="tiles row">
-          {this.props.data.map((data) => {
-            return <Tile data={data} key={data.id} />;
-          })}
-        </div>
-      
+      <div className="tiles row">
+        {this.props.data.map((data) => {
+          return <Tile data={data} key={data.id} />;
+        })}
+      </div>
     );
   }
 }
@@ -62,8 +61,8 @@ class Tile extends Component {
   render() {
     // Modify styles based on state values
     let tileStyle = {
-        width: '200px',
-        height: '200px'
+      width: "200px",
+      height: "200px",
     };
     let headerStyle = {};
     let zoom = {};
@@ -71,14 +70,16 @@ class Tile extends Component {
 
     return (
       <div className="tile col col-6 col-md-4 col-lg-3">
-        <img
-          onMouseEnter={this._mouseEnter}
-          onMouseLeave={this._mouseLeave}
-          onClick={this._clickHandler}
-          src={this.props.data.image}
-          alt={this.props.data.name}
-          style={tileStyle}
-        />
+        <Link to={`/photos/${this.props.data.id}`}>
+          <img
+            onMouseEnter={this._mouseEnter}
+            onMouseLeave={this._mouseLeave}
+            //onClick={this._clickHandler}
+            src={this.props.data.image}
+            alt={this.props.data.name}
+            style={tileStyle}
+          />
+        </Link>
       </div>
     );
   }
