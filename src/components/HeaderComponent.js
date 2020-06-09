@@ -73,10 +73,7 @@ class Header extends Component {
             <NavbarToggler onClick={this.toggleNav} />
 
             <NavbarBrand className="mr-auto" href="/">
-              <span
-                className="fa fa-trophy fa-4x"
-                style={{ color: "gold" }}
-              ></span>
+              <span role="img">🎷</span>
             </NavbarBrand>
 
             <Collapse isOpen={this.state.isNavOpen} navbar>
@@ -123,7 +120,7 @@ class Header extends Component {
             </NavItem>
           </Nav>
         </Navbar>
-        
+
         <Jumbotron>
           <div className="container">
             <div className="row row-header">
@@ -132,7 +129,7 @@ class Header extends Component {
                 <p>Hi, welcome to Kevin's website</p>
               </div>
               <div className="col-2 col-sm-2">
-                <MusicPlayer/>
+                <MusicPlayer />
               </div>
               <div className="col-2 col-sm-4">
                 <label>

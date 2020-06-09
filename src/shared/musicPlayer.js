@@ -58,7 +58,7 @@ class MusicPlayer extends Component {
           <span id="span" className="fa fa-play"></span>
         </Button>
         <Button className="full" onClick={this.handleSwap} style={{backgroundColor:"#ee8572"}}>
-          Swap Song
+          <span id="span" className="fa fa-fast-forward"></span>
         </Button>
         <p>Currently playing {this.sources[this.state.currentSrcIndex]}</p>
       </div>

@@ -4,6 +4,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import bootstrap first
 import 'font-awesome/css/font-awesome.css';
 
+//jquery , popper.jsfor bootstrap 
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';

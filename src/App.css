@@ -19,3 +19,54 @@
 .body-bright{
   background-color: #d4f3ef;
 }
+
+.carousel {
+  
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+  .carousel .carousel-item {
+    max-height: 600px; 
+    width: 100%;
+    height: auto;
+    
+    
+  }
+  
+#carousel-btn {
+  background-color: #ee8572;
+  right: 0px;
+  position: absolute;
+  bottom: 50px;
+  z-index: 1; 
+}
+/*Tiles*/
+.tiles {
+  padding: 50px 10px 50px 10px;
+  justify-content: center;
+  position: relative;
+  
+
+}
+.tile {
+  
+  cursor: pointer;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  padding-left: 2px;
+  
+  
+}
+ .tile img {
+  width: 100%;
+  transition: transform 500ms ease;
+}
+
+ .tile img:hover { 
+  transform: scale(1.1);
+}
+  
+
