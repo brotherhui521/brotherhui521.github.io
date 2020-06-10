@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PictureCarousel from "../shared/PictureCarousel";
 import $ from "jquery";
 import Tiles from "../shared/Tiles";
-import {pictureData} from '../shared/tempData/pictures';
+import { pictureData } from "../shared/tempData/pictures";
 
 class Home extends Component {
   constructor(props) {
@@ -10,10 +10,7 @@ class Home extends Component {
     this.state = {};
 
     this.handleButton = this.handleButton.bind(this);
-
-    
   }
-  
 
   componentDidMount() {
     this.handleCarousel();
@@ -39,11 +36,9 @@ class Home extends Component {
     return (
       <div className="body-bright">
         <div className="container">
-          <div >
-            <PictureCarousel handleButton={this.handleButton} />
-            <h2>My Gallery</h2>
-            <Tiles data={pictureData}/>
-          </div>
+          <PictureCarousel handleButton={this.handleButton} />
+          <h2>My Gallery</h2>
+          <Tiles data={pictureData} />
         </div>
       </div>
     );

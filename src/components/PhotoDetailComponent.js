@@ -7,10 +7,20 @@ import {
   CardSubtitle,
   Button,
   CardTitle,
+  BreadcrumbItem
 } from "reactstrap";
+
+import {Link} from 'react-router-dom';
 
 function RenderPhoto({ photo }) {
   return (
+    <div className="container">
+    <div className="row">
+    <BreadcrumbItem style={{ marginLeft: 14 }}>
+            <Link to="/photos">Photos</Link>
+          </BreadcrumbItem>
+          <BreadcrumbItem active>Photo Detail</BreadcrumbItem>
+    </div>
     <div className="row" >
       <div className="col col-12 col-md-6 col-lg-5">
         <Card style={{ marginTop: "10px" ,marginBottom:"10px" }}>
@@ -23,6 +33,7 @@ function RenderPhoto({ photo }) {
           </CardBody>
         </Card>
       </div>
+    </div>
     </div>
   );
 }

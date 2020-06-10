@@ -54,11 +54,11 @@ class MusicPlayer extends Component {
           src={this.sources[this.state.currentSrcIndex]}
         />
 
-        <Button onClick={this.handleMusic} style={{marginRight: 5, backgroundColor:"#ee8572"}}>
-          <span id="span" className="fa fa-play fa-lg"></span>
+        <Button onClick={this.handleMusic} style={{marginRight: 3, backgroundColor:"#ee8572"}}>
+          <span id="span" className="fa fa-play fa-xs"></span>
         </Button>
         <Button className="full" onClick={this.handleSwap} style={{backgroundColor:"#ee8572"}}>
-          <span id="span" className="fa fa-fast-forward"></span>
+          <span id="span" className="fa fa-fast-forward "></span>
         </Button>
         <p>Now playing {this.sources[this.state.currentSrcIndex].split(".mp3")[0]}</p>
       </div>

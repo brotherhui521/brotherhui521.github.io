@@ -4,9 +4,15 @@
     padding: 20px 0px 20px 0px;
 }
 
-.navbar-dark{
+.navbar-light{
   background-color: #63b7af;
   font-size: 1.4rem;
+
+}
+.navbar-dark{
+  background-color: #162447;
+  font-size: 1.4rem;
+
 }
 
 
@@ -15,9 +21,19 @@
     margin:0px auto;
   background-color: #abf0e9;
 }
+.jumbotron-dark{
+  padding:20px 10px 20px 10px;
+    margin:0px auto;
+  background-color: #1f4068;
+  color: white;
+}
 
 .body-bright{
   background-color: #d4f3ef;
+}
+.body-dark{
+  background-color: #1b1b2f;
+  color: white;
 }
 
 .carousel {

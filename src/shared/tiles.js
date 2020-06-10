@@ -63,6 +63,8 @@ class Tile extends Component {
     let tileStyle = {
       width: "200px",
       height: "200px",
+      border: "2px solid white",
+      
     };
     let headerStyle = {};
     let zoom = {};
@@ -78,6 +80,7 @@ class Tile extends Component {
             src={this.props.data.image}
             alt={this.props.data.name}
             style={tileStyle}
+            
           />
         </Link>
       </div>

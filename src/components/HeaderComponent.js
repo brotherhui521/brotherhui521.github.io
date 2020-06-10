@@ -19,6 +19,7 @@ import {
 import Switch from "react-switch";
 import { NavLink } from "react-router-dom";
 import MusicPlayer from "../shared/MusicPlayer";
+import $ from "jquery";
 
 class Header extends Component {
   constructor(props) {
@@ -61,14 +62,23 @@ class Header extends Component {
   }
 
   //nightshift mode
-  handleChecked(checked) {
-    this.setState({ checked });
+  async handleChecked() {
+    await this.setState({ checked: !this.state.checked });
+    if (this.state.checked == true) {
+      $(".navbar-light").removeClass("navbar-light").addClass("navbar-dark");
+      $(".jumbotron").removeClass("jumbotron").addClass("jumbotron-dark");
+      $(".body-bright").removeClass("body-bright").addClass("body-dark");
+    } else {
+      $(".navbar-dark").removeClass("navbar-dark").addClass("navbar-light");
+      $(".jumbotron-dark").removeClass("jumbotron-dark").addClass("jumbotron");
+      $(".body-dark").removeClass("body-dark").addClass("body-bright");
+    }
   }
 
   render() {
     return (
       <React.Fragment>
-        <Navbar dark expand="md">
+        <Navbar light expand="md">
           <div className="container">
             <NavbarToggler onClick={this.toggleNav} />
 
@@ -77,7 +87,7 @@ class Header extends Component {
             </NavbarBrand>
 
             <Collapse isOpen={this.state.isNavOpen} navbar>
-              <Nav navbar className="ml-auto">
+              <Nav navbar className="ml-auto" onClick={this.toggleNav}>
                 <NavItem>
                   <NavLink className="nav-link" to="/home">
                     <span className="fa fa-home fa-lg"></span>Home
@@ -108,42 +118,39 @@ class Header extends Component {
                     <span className="fa fa-address-card fa-lg"></span>Contact
                   </NavLink>
                 </NavItem>
+                <NavItem style={{textAlign: 'left'}}>
+                  <Button color="primary" onClick={this.toggleModal} style={{marginTop: 5}}>
+                    <span className="fa fa-sign-in"></span>Sign In
+                  </Button>
+                </NavItem>
               </Nav>
             </Collapse>
           </div>
-
-          <Nav className="ml-auto" navbar>
-            <NavItem>
-              <Button color="primary" onClick={this.toggleModal}>
-                <span className="fa fa-sign-in"></span>Sign In
-              </Button>
-            </NavItem>
-          </Nav>
         </Navbar>
 
         <Jumbotron>
           <div className="container">
             <div className="row row-header">
-              <div className="col-8 col-sm-6">
-                <h1>Welcome!</h1>
+              <div className="col-7 col-lg-7">
+                <h2>Welcome!</h2>
                 <p>Hi, welcome to Kevin's website</p>
               </div>
-              <div className="col-2 col-sm-2">
+              <div className="col-2">
                 <MusicPlayer />
               </div>
-              <div className="col-2 col-sm-4">
-                <label>
-                  <Switch
-                    className="align-middle"
-                    height={20}
-                    width={40}
+              <div className="col-3">
+                <div class="custom-control custom-switch">
+                  <input
+                    type="checkbox"
+                    className="custom-control-input"
+                    id="custom switch"
                     checked={this.state.checked}
-                    onChange={this.handleChecked}
-                  ></Switch>
-                  <span style={{ fontSize: "80%" }}>
+                    onClick={() => this.handleChecked()}
+                  />
+                  <label className="custom-control-label" for="custom switch">
                     Night Mode: {this.state.checked ? "On" : "Off"}
-                  </span>
-                </label>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
