@@ -37,17 +37,13 @@
 }
 
 .carousel {
-  
   margin-top: 50px;
   margin-bottom: 50px;
-
 }
   .carousel .carousel-item {
     max-height: 600px; 
     width: 100%;
     height: auto;
-    
-    
   }
   
 #carousel-btn {
@@ -62,8 +58,6 @@
   padding: 50px 10px 50px 10px;
   justify-content: center;
   position: relative;
-  
-
 }
 .tile {
   
@@ -73,15 +67,26 @@
   height: 200px;
   margin-bottom: 15px;
   padding-left: 2px;
-  
-  
 }
  .tile img {
   width: 100%;
   transition: transform 500ms ease;
 }
-
  .tile img:hover { 
   transform: scale(1.1);
 }
   
+/*quote Machine*/
+.social-bar{
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+.social-bar li{
+  
+  display: inline;
+  
+}
+.quote-box{
+  text-align: center;
+}

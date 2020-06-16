@@ -3,6 +3,7 @@ import PictureCarousel from "../shared/PictureCarousel";
 import $ from "jquery";
 import Tiles from "../shared/Tiles";
 import { pictureData } from "../shared/tempData/pictures";
+import QuoteMachine from "../shared/projects/QuoteMachine";
 
 class Home extends Component {
   constructor(props) {
@@ -39,6 +40,8 @@ class Home extends Component {
           <PictureCarousel handleButton={this.handleButton} />
           <h2>My Gallery</h2>
           <Tiles data={pictureData} />
+          
+          <QuoteMachine/>
         </div>
       </div>
     );
