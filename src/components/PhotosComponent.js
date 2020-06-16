@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 function Photos() {
   const [currentImage, setCurrentImage] = useState(0);
-  
- const openLink =((event,{ photo, index })=>{
+
+  const openLink = (event, { photo, index }) => {
     setCurrentImage(index);
-    
-    console.log(photo.src.split("Picture")[1].split('.')[0]);
-    window.location=`/photos/${photo.src.split("Picture")[1].split('.')[0]}`
-  });
+
+    console.log(photo.src.split("Picture")[1].split(".")[0]);
+    window.location = `/photos/${photo.src.split("Picture")[1].split(".")[0]}`;
+  };
 
   const photos = [
     {
@@ -29,6 +29,23 @@ function Photos() {
       width: 1,
       height: 1,
     },
+    { src: "/images/Picture4.jpg", width: 4, height: 3 },
+    { src: "/images/Picture5.jpg", width: 4, height: 3 },
+    { src: "/images/Picture6.jpg", width: 3, height: 4 },
+    { src: "/images/Picture7.jpg", width: 3, height: 4 },
+    { src: "/images/Picture8.jpg", width: 3, height: 4 },
+    { src: "/images/Picture9.jpg", width: 4, height: 3 },
+    { src: "/images/Picture10.jpg", width: 4, height: 3 },
+    { src: "/images/Picture11.jpg", width: 3, height: 4 },
+    { src: "/images/Picture12.jpg", width: 4, height: 3 },
+    { src: "/images/Picture13.jpg", width: 3, height: 4 },
+    { src: "/images/Picture14.jpg", width: 3, height: 4 },
+    { src: "/images/Picture15.jpg", width: 3, height: 4 },
+    { src: "/images/Picture16.jpg", width: 4, height: 3 },
+    { src: "/images/Picture17.jpg", width: 3, height: 4 },
+    { src: "/images/Picture18.JPG", width: 4, height: 3 },
+    { src: "/images/Picture20.JPG", width: 3, height: 4 },
+    { src: "/images/Picture19.JPG", width: 3, height: 4 },
   ];
   return (
     <div className="body-bright">

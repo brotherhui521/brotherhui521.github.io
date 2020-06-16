@@ -1,5 +1,5 @@
 export const pictureData =[
-    { id: 1, name: "Drawing", image: "/images/Picture1.jpg" },
+    { id: 1, name: "Drawing", image: "/images/Picture1.jpg", lat:"31.41", lng:"120.07" },
     { id: 2, name: "flower", image: "/images/Picture2.jpg" },
     { id: 3, name: "kevin", image: "/images/Picture3.jpg" },
     { id: 4, name: "duck", image: "/images/Picture4.jpg" },
@@ -17,8 +17,8 @@ export const pictureData =[
     { id: 16, name: "noodle", image: "/images/Picture16.jpg" },
     { id: 17, name: "burger", image: "/images/Picture17.jpg" },
     { id: 18, name: "road", image: "/images/Picture18.JPG" },
-    { id: 19, name: "Sons", image: "/images/Picture19.jpeg" },
+    { id: 19, name: "flower valley", image: "/images/Picture19.JPG" },
     { id: 20, name: "bed", image: "/images/Picture20.JPG" },
-    { id: 21, name: "flower valley", image: "/images/Picture21.JPG" },
+    
     
   ];
