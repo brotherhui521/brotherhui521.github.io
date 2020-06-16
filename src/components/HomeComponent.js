@@ -34,7 +34,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="body-bright">
+      <div >
         <div className="container">
           <PictureCarousel handleButton={this.handleButton} />
           <h2>My Gallery</h2>

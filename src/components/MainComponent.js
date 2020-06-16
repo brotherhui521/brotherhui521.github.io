@@ -34,7 +34,8 @@ class Main extends Component {
     return (
       <div>
         <Header />
-        <Switch location={this.props.location}>
+        <div className={'body-bright'}>
+        <Switch location={this.props.location} >
           <Route path="/home" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
@@ -45,6 +46,8 @@ class Main extends Component {
           <Redirect to="/home" />
         </Switch>
 
+        </div>
+        
         <Footer />
       </div>
     );

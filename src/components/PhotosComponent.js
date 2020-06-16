@@ -48,7 +48,7 @@ function Photos() {
     { src: "/images/Picture19.JPG", width: 3, height: 4 },
   ];
   return (
-    <div className="body-bright">
+    <div >
       <div className="container">
         <div className="row">
           <BreadcrumbItem style={{ marginLeft: 14 }}>
