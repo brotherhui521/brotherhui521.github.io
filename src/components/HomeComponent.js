@@ -4,6 +4,8 @@ import $ from "jquery";
 import Tiles from "../shared/Tiles";
 import { pictureData } from "../shared/tempData/pictures";
 import QuoteMachine from "../shared/projects/QuoteMachine";
+import Timeline from "../shared/projects/Timeline";
+
 
 class Home extends Component {
   constructor(props) {
@@ -42,6 +44,7 @@ class Home extends Component {
           <Tiles data={pictureData} />
           
           <QuoteMachine/>
+          <Timeline />
         </div>
       </div>
     );

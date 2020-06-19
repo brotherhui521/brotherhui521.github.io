@@ -55,10 +55,15 @@
 }
 /*Tiles*/
 .tiles {
-  padding: 50px 10px 50px 10px;
+  padding: 50px 10px 10px 10px;
   justify-content: center;
   position: relative;
 }
+div.tiles +div {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .tile {
   
   cursor: pointer;
@@ -81,6 +86,7 @@
   padding: 0;
   list-style-type: none;
   text-align: center;
+  margin-bottom: 50px;
 }
 .social-bar li{
   

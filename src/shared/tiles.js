@@ -1,15 +1,53 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import $ from 'jquery';
 
 class Tiles extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      numberOfPictures: 5,
+      currentPicture: 0,
+      pictures: [],
+    };
+  }
+  componentDidMount() {
+    this.renderPictures();
+  }
+
+  renderPictures() {
+    if (this.state.currentPicture >=this.props.data.length) {
+      console.log("no more")
+      $('#loadmorePic').addClass('disabled');
+    } else {
+      let pictures = [];
+      
+      for (
+        var i = this.state.currentPicture;
+        i < this.state.numberOfPictures;
+        i++
+      ) {
+        pictures.push(
+          <Tile data={this.props.data[i]} key={this.props.data[i].id} />
+        );
+      }
+      this.setState({
+        pictures: [...this.state.pictures].concat(pictures),
+        currentPicture: this.state.currentPicture + 5,
+        numberOfPictures: this.state.numberOfPictures+5,
+      });
+    }
+  }
   render() {
     // Create tile for each item in data array
     // Pass data to each tile and assign a key
+
     return (
-      <div className="tiles row">
-        {this.props.data.map((data) => {
-          return <Tile data={data} key={data.id} />;
-        })}
+      <div>
+        <div className="tiles row">{this.state.pictures}</div>
+        <div className="row">
+          <button id="loadmorePic" className="btn btn-primary" onClick={()=>this.renderPictures()}>View More</button>
+        </div>
       </div>
     );
   }
@@ -64,7 +102,6 @@ class Tile extends Component {
       width: "200px",
       height: "200px",
       border: "2px solid white",
-      
     };
     let headerStyle = {};
     let zoom = {};
@@ -80,7 +117,6 @@ class Tile extends Component {
             src={this.props.data.image}
             alt={this.props.data.name}
             style={tileStyle}
-            
           />
         </Link>
       </div>
