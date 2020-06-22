@@ -77,7 +77,7 @@ class Header extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div className="header">
         <Navbar light expand="md">
           <div className="container">
             <NavbarToggler onClick={this.toggleNav} />
@@ -199,7 +199,7 @@ class Header extends Component {
             </Form>
           </ModalBody>
         </Modal>
-      </React.Fragment>
+      </div>
     );
   }
 }

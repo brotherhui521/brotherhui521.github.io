@@ -101,7 +101,7 @@ class Tile extends Component {
     let tileStyle = {
       width: "200px",
       height: "200px",
-      border: "2px solid white",
+      
     };
     let headerStyle = {};
     let zoom = {};

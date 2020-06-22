@@ -16,6 +16,8 @@ class YoutubePlayer extends Component {
         const opts = {
             maxheight: '500',
             maxwidth: '700',
+            width: '370',
+            height: '200',
             playerVars: {
                       // https://developers.google.com/youtube/player_parameters
               autoplay: 0,
@@ -23,7 +25,7 @@ class YoutubePlayer extends Component {
           };
       
           return (
-            <YouTube videoId="TAn5pLdSbss" opts={opts} onReady={this._onReady} />
+            <YouTube videoId={this.props.vId} opts={opts} onReady={this._onReady} />
           );
     }
 }

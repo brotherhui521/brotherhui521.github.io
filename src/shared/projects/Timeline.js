@@ -1,63 +1,63 @@
 import React from "react";
 import "./TimelineCSS.scss";
 import $ from "jquery";
-import Fade from "react-reveal/Fade";
-
+import Fade from "react-reveal";
 
 function Timeline() {
   return (
     <div>
-      
       <h2>My Timeline</h2>
       <div className="timeline">
         <div className="container">
-        
-          <Fade left>
-            <div className="timeline-item">
+          <div className="timeline-item">
+            <Fade left>
               <div className="timeline-img"></div>
 
-              <div className="timeline-content ">
-                <h3>Journey Begins</h3>
+              <div className="timeline-content timeline-card">
+                <div className="timeline-img-header">
+                  <img src="/images/css.png" alt="intel" height="200"></img>
+                  <h3>Journey Begins</h3>
+                </div>
+
                 <div className="date">1 AUG 2018</div>
                 <p>
-                  My first time learning about web development in school. I
-                  start from HTML, CSS, and Javascript, the fundamentals, and
-                  try to integrate them. It finally ran on my localserver.
+                  First time learning web development in school.
+                  (HTML, CSS, and Javascript)
+                 
                   Hooray!
                 </p>
                 <a className="more" href="javascript:void(0)">
                   More
                 </a>
               </div>
-            </div>
-          </Fade>
-          <Fade right>
-            <div className="timeline-item">
+            </Fade>
+          </div>
+
+          <div className="timeline-item">
+            <Fade right>
               <div className="timeline-img"></div>
 
-              <div className="timeline-content timeline-card js--fadeInRight">
+              <div className="timeline-content timeline-card">
                 <div className="timeline-img-header">
+                  <img src="/images/intel.png" alt="intel" height="200"></img>
                   <h3>Intel Internship</h3>
                 </div>
                 <div className="date">25 MAR 2019</div>
                 <p>
-                  Intel Internet Of Things Group hired me as an intern under
-                  Vision, Markets, & Channels team. I was really honored to be
-                  able to work with all the professionals in different fields,
-                  and learn experiences which benefit both my career and life.
+                  Started my internship at Intel Internet Of Things Group under
+                  Vision, Markets, & Channels team. 
                   Working in a team which deals with both cutting-edge
-                  technology and business customers all over the globe is really
-                  fantastic and I enjoyed learning every day.
+                  technology and global customers is really cool.
                 </p>
                 <a className="more " href="javascript:void(0)">
                   More
                 </a>
               </div>
-            </div>
-          </Fade>
+            </Fade>
+          </div>
 
-          <Fade left>
-            <div className="timeline-item">
+          <div className="timeline-item">
+            <Fade left>
               <div className="timeline-img"></div>
 
               <div className="timeline-content ">
@@ -71,11 +71,11 @@ function Timeline() {
                   deployed on Intel Neural Compute Stick II.
                 </p>
               </div>
-            </div>
-          </Fade>
+            </Fade>
+          </div>
 
-          <Fade right>
-            <div className="timeline-item">
+          <div className="timeline-item">
+            <Fade right>
               <div className="timeline-img"></div>
 
               <div className="timeline-content js--fadeInRight">
@@ -92,11 +92,11 @@ function Timeline() {
                   More
                 </a>
               </div>
-            </div>
-          </Fade>
+            </Fade>
+          </div>
 
-          <Fade right>
-            <div className="timeline-item">
+          <div className="timeline-item">
+            <Fade right>
               <div className="timeline-img"></div>
 
               <div className="timeline-content timeline-card ">
@@ -115,11 +115,11 @@ function Timeline() {
                   More
                 </a>
               </div>
-            </div>
-          </Fade>
+            </Fade>
+          </div>
 
-          <Fade left>
-            <div className="timeline-item">
+          <div className="timeline-item">
+            <Fade left>
               <div className="timeline-img"></div>
 
               <div className="timeline-content timeline-card js--fadeInRight">
@@ -137,11 +137,11 @@ function Timeline() {
                   More
                 </a>
               </div>
-            </div>
-          </Fade>
+            </Fade>
+          </div>
 
-          <Fade right>
-            <div className="timeline-item">
+          <div className="timeline-item">
+            <Fade right>
               <div className="timeline-img"></div>
 
               <div className="timeline-content ">
@@ -153,11 +153,11 @@ function Timeline() {
                   inventore!
                 </p>
               </div>
-            </div>
-          </Fade>
+            </Fade>
+          </div>
 
-          <Fade left>
-            <div className="timeline-item">
+          <div className="timeline-item">
+            <Fade left>
               <div className="timeline-img"></div>
 
               <div className="timeline-content timeline-card js--fadeInRight">
@@ -175,11 +175,11 @@ function Timeline() {
                   More
                 </a>
               </div>
-            </div>
-          </Fade>
+            </Fade>
+          </div>
 
-          <Fade right>
-            <div className="timeline-item">
+          <div className="timeline-item">
+            <Fade right>
               <div className="timeline-img"></div>
 
               <div className="timeline-content ">
@@ -195,8 +195,8 @@ function Timeline() {
                   More
                 </a>
               </div>
-            </div>
-          </Fade>
+            </Fade>
+          </div>
         </div>
       </div>
     </div>

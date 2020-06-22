@@ -16,9 +16,9 @@ export const pictureData =[
     { id: 15, name: "flour", image: "/images/Picture15.jpg" },
     { id: 16, name: "noodle", image: "/images/Picture16.jpg" },
     { id: 17, name: "burger", image: "/images/Picture17.jpg" },
-    { id: 18, name: "road", image: "/images/Picture18.JPG" },
-    { id: 19, name: "flower valley", image: "/images/Picture19.JPG" },
-    { id: 20, name: "bed", image: "/images/Picture20.JPG" },
+    { id: 18, name: "road", image: "/images/Picture18.jpg" },
+    { id: 19, name: "flower valley", image: "/images/Picture19.jpg" },
+    { id: 20, name: "bed", image: "/images/Picture20.jpg" },
     
     
   ];

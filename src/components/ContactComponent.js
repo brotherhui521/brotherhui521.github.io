@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Button, Label, Col, Row } from "reactstrap";
 import { Control, Errors, Form } from "react-redux-form";
+import {Image} from 'react-bootstrap';
 const required = (val) => val && String(val).length;
 const maxNumber = (len) => (val) => !val || String(val).length <= len;
 const minNumber = (len) => (val) => val && String(val).length >= len;
@@ -43,7 +44,7 @@ class Contact extends Component {
             </address>
           </div>
           <div className="col-12 col-sm-6 offset-sm-1">
-            <h5>Map of our Location</h5>
+            <Image src="images/thanks.jpg" alt="Thank you!" style={{}}/>
           </div>
           <div className="col-12 col-sm-11 offset-sm-1">
             <div className="btn-group" role="group">
