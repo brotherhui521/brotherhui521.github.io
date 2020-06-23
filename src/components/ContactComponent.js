@@ -27,7 +27,7 @@ class Contact extends Component {
       <div className="container">
         <div className="row row-content">
           <div className="col-12" style={{margin: "30px 0px 30px 0px"}}>
-            <h3>Feel free to reach out to me. I will reply ASAP!</h3>
+            <h3>Feel free to reach out to me</h3>
           </div>
           <div  className="col-12 col-sm-4 offset-sm-1">
             <h5>My Address</h5>
@@ -43,8 +43,8 @@ class Contact extends Component {
               <a href="mail to:brotherhui521@gmail.com">Send me an email</a>
             </address>
           </div>
-          <div className="col-12 col-sm-6 offset-sm-1">
-            <Image src="images/thanks.jpg" alt="Thank you!" style={{}}/>
+          <div className="col-12 col-sm-6 offset-sm-1" >
+            <img src="images/t.png" alt="Thank you!" style={{top:10}}/>
           </div>
           <div className="col-12 col-sm-11 offset-sm-1">
             <div className="btn-group" role="group">

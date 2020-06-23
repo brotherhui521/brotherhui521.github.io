@@ -39,19 +39,21 @@
 
 .body-bright{
   background-color: #d4f3ef;
-  margin-top: 200px;
+  margin-top: 100px;
+  padding-top: 80px;
 
 }
 .body-dark{
   background-color: #1b1b2f;
   color: white;
-  margin-top: 200px;
+  margin-top: 100px;
+  padding-top: 80px;
 
 }
 
 .carousel {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
   .carousel .carousel-item {
     max-height: 600px; 
@@ -68,7 +70,7 @@
 }
 /*Tiles*/
 .tiles {
-  padding: 50px 10px 10px 10px;
+  padding-top: 20px;
   justify-content: center;
   position: relative;
 }
@@ -99,7 +101,7 @@ div.tiles +div {
   padding: 0;
   list-style-type: none;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .social-bar li{
   
@@ -108,4 +110,10 @@ div.tiles +div {
 }
 .quote-box{
   text-align: center;
+}
+
+/*about page*/
+
+.about{
+  padding-top: 80px;
 }

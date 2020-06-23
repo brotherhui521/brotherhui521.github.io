@@ -15,11 +15,13 @@ import {
   FormGroup,
   Input,
   Label,
+  
 } from "reactstrap";
 import Switch from "react-switch";
-import { NavLink } from "react-router-dom";
+
 import MusicPlayer from "../shared/MusicPlayer";
 import $ from "jquery";
+import {NavHashLink as NavLink} from "react-router-hash-link";
 
 class Header extends Component {
   constructor(props) {
@@ -93,11 +95,13 @@ class Header extends Component {
                     <span className="fa fa-home fa-lg"></span>Home
                   </NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink className="nav-link" to="/about">
-                    <span className="fa fa-info fa-lg"></span>About
-                  </NavLink>
-                </NavItem>
+             
+                  <NavItem>
+                    <NavLink smooth className="nav-link" to="/about#about-me">
+                     <span className="fa fa-info fa-lg"></span>About
+                    </NavLink>
+                  </NavItem>
+                
                 <NavItem>
                   <NavLink className="nav-link" to="/projects">
                     <span className="fa fa-list fa-lg"></span>Projects
@@ -118,8 +122,12 @@ class Header extends Component {
                     <span className="fa fa-address-card fa-lg"></span>Contact
                   </NavLink>
                 </NavItem>
-                <NavItem style={{textAlign: 'left'}}>
-                  <Button color="primary" onClick={this.toggleModal} style={{marginTop: 5}}>
+                <NavItem style={{ textAlign: "left" }}>
+                  <Button
+                    color="primary"
+                    onClick={this.toggleModal}
+                    style={{ marginTop: 5 }}
+                  >
                     <span className="fa fa-sign-in"></span>Sign In
                   </Button>
                 </NavItem>

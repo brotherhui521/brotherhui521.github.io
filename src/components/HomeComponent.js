@@ -5,7 +5,7 @@ import Tiles from "../shared/Tiles";
 import { pictureData } from "../shared/tempData/pictures";
 import QuoteMachine from "../shared/projects/QuoteMachine";
 import Timeline from "../shared/projects/Timeline";
-
+import About from "./AboutFunctionalComponent";
 
 class Home extends Component {
   constructor(props) {
@@ -37,14 +37,19 @@ class Home extends Component {
 
   render() {
     return (
-      <div >
+      <div>
         <div className="container">
           <PictureCarousel handleButton={this.handleButton} />
+          <QuoteMachine />
           <h2>My Gallery</h2>
           <Tiles data={pictureData} />
-          
-          <QuoteMachine/>
-          <Timeline />
+
+          <div id="my-timeline">
+            <Timeline />
+          </div>
+          <div id="about-me">
+            <About />
+          </div>
         </div>
       </div>
     );

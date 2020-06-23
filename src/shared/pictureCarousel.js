@@ -9,18 +9,16 @@ const PictureCarousel = (props) => {
             <div class="carousel-item active ">
               <img
                 className="img-fluid d-block w-100"
-                src="/images/Picture5.jpg"
+                src="/images/sax.PNG"
                 alt="uthappizza"
               />
               <div class="carousel-caption d-none d-md-block align-items-center">
                 <h2 class="mt-0">
-                  Uthappizza <span class="badge badge-danger">HOT</span>
-                  <span class="badge badge-pill badge-secondarys">$4.99</span>
+                  Father's Day Special Song <span class="badge badge-danger">NEW</span>
+                  <span class="badge badge-pill badge-secondarys">Available on YouTube</span>
                 </h2>
                 <p class="d-none d-sm-block">
-                  A unique combination of Indian Uthappam (pancake) and Italian
-                  pizza, topped with Cerignola olives, ripe vine cherry
-                  tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.
+                  Check out this new video in the Interest Page.
                 </p>
               </div>
             </div>
@@ -52,14 +50,11 @@ const PictureCarousel = (props) => {
               />
               <div class="carousel-caption d-none d-md-block align-items-center">
                 <h2 class="mt-2">
-                  Weekend Grand Buffet{" "}
-                  <span class="badge badge-danger">NEW</span>
+                  "A Duck in Water" 
+                  <span class="badge badge-danger">HOT</span>
                 </h2>
                 <p class="d-none d-sm-block">
-                  Featuring mouthwatering combinations with a choice of five
-                  different salads, six enticing appetizers, six main entrees
-                  and five choicest desserts. Free flowing bubbly and soft
-                  drinks. All for just $19.99 per person{" "}
+                  Check out new pictures in Photographs Page.
                 </p>
               </div>
             </div>
