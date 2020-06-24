@@ -22,6 +22,7 @@ import Switch from "react-switch";
 import MusicPlayer from "../shared/MusicPlayer";
 import $ from "jquery";
 import {NavHashLink as NavLink} from "react-router-hash-link";
+import ScrollToTop from "../shared/ScrollToTop";
 
 class Header extends Component {
   constructor(props) {
@@ -163,6 +164,7 @@ class Header extends Component {
             </div>
           </div>
         </Jumbotron>
+        <ScrollToTop/>
 
         <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
           <ModalHeader toggle={this.toggleModal}>

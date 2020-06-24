@@ -30,14 +30,11 @@ const PictureCarousel = (props) => {
               />
               <div class="carousel-caption d-none d-md-block align-items-center">
                 <h2 class="mt-2">
-                  Weekend Grand Buffet{" "}
-                  <span class="badge badge-danger">NEW</span>
+                  love travelling
+                  <span class="badge badge-danger"></span>
                 </h2>
                 <p class="d-none d-sm-block">
-                  Featuring mouthwatering combinations with a choice of five
-                  different salads, six enticing appetizers, six main entrees
-                  and five choicest desserts. Free flowing bubbly and soft
-                  drinks. All for just $19.99 per person{" "}
+                  
                 </p>
               </div>
             </div>
@@ -51,7 +48,7 @@ const PictureCarousel = (props) => {
               <div class="carousel-caption d-none d-md-block align-items-center">
                 <h2 class="mt-2">
                   "A Duck in Water" 
-                  <span class="badge badge-danger">HOT</span>
+                  <span class="badge badge-danger">NEW</span>
                 </h2>
                 <p class="d-none d-sm-block">
                   Check out new pictures in Photographs Page.

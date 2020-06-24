@@ -8,7 +8,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="container">
-      <div style={{ height: "70vh" , paddingTop:40}}>
+      <div style={{  marginTop:40, paddingTop:40, paddingBottom:30}}>
         <h1 >
           Currently working on converting projects into React components...
         </h1>
