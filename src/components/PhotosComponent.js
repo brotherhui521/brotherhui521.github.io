@@ -43,9 +43,9 @@ function Photos() {
     { src: "/images/Picture15.jpg", width: 3, height: 4 },
     { src: "/images/Picture16.jpg", width: 4, height: 3 },
     { src: "/images/Picture17.jpg", width: 3, height: 4 },
-    { src: "/images/Picture18.JPG", width: 4, height: 3 },
-    { src: "/images/Picture20.JPG", width: 3, height: 4 },
-    { src: "/images/Picture19.JPG", width: 3, height: 4 },
+    { src: "/images/Picture18.jpg", width: 4, height: 3 },
+    { src: "/images/Picture20.jpg", width: 3, height: 4 },
+    { src: "/images/Picture19.jpg", width: 3, height: 4 },
   ];
   return (
     <div >
