@@ -9,7 +9,7 @@ const PictureCarousel = (props) => {
             <div class="carousel-item active ">
               <img
                 className="img-fluid d-block w-100"
-                src="/images/sax.PNG"
+                src="/images/sax.png"
                 alt="uthappizza"
               />
               <div class="carousel-caption d-none d-md-block align-items-center">
@@ -25,7 +25,7 @@ const PictureCarousel = (props) => {
             <div class="carousel-item ">
               <img
                 className="img-fluid d-block w-100"
-                src="/images/Picture9.JPG"
+                src="/images/Picture9.jpg"
                 alt="buffet"
               />
               <div class="carousel-caption d-none d-md-block align-items-center">

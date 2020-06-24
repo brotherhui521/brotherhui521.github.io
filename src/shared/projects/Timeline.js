@@ -178,7 +178,7 @@ function Timeline() {
                 <div className="timeline-img-header">
                   <img
                     src="/images/asu.jpg"
-                    alt="intel"
+                    alt="asu"
                     height="420"
                   ></img>
                   <h3>Graduate from ASU</h3>
